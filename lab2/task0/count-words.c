@@ -9,7 +9,7 @@ char *words(int count)
 {
   char *words = "words";
   if (count == 1)
-    	words[strlen(words)-1] = '\0';
+    	words = "word";
   
   return words;
 }
