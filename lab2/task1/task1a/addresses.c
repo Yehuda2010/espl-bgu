@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 
     printf("- &foo1: %p\n", &foo1);
     printf("- &foo1: %p\n", &foo2);
-    printf("- &foo2 - &foo1: %ld\n", &foo2 - &foo1);
+    printf("- &foo2 - &foo1: %d\n", &foo2 - &foo1);
 
     int iarray[] = {1, 2, 3};
     char carray[] = {'a', 'b', 'c'};
@@ -49,17 +49,17 @@ int main(int argc, char **argv)
         printf("%d", *iarrayPtr);
         iarrayPtr = iarrayPtr + 1;
     }
-    printf('\n');
+    printf("\n");
     for (int i = 0; i < 3; i++)
     {
         printf("%c", *carrayPtr);
         carrayPtr = carrayPtr + 1;
     }
-    printf('\n');
-    // for (int i = 0; i < 3; i++)
-    // {
-    // printf("%d", p + i);
-    // }
+    printf("\n");
+    for (int i = 0; i < 3; i++)
+    {
+    printf("%p\n", p + i);
+    }
     return 0;
 }
 
